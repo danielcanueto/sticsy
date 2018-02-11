@@ -1,0 +1,18 @@
+Package: sticsy
+Type: Package
+Title: Statistical total correlation spectroscopy with new dependence measures (distance correlation, distance covariance, MIC, gMIC, TIC)
+Version: 0.1.0
+Author: c(person("Daniel", "Canueto", role = c("aut", "cre"), email =
+    "daniel.canueto@urv.cat"))
+Maintainer: Daniel Canueto <daniel.canueto@urv.cat>
+Description: Statistical total correlation spectroscopy with new dependence measures (distance correlation, distance covariance, MIC, gMIC, TIC)
+LazyData: TRUE
+License: GPL-2 | file LICENSE
+ByteCompile: TRUE
+URL: http://github.com/danielcanueto/sticsy
+BugReports: http://github.com/danielcanueto/sticsy/issues
+Imports:
+	plotly,
+	energy,
+	minerva
+RoxygenNote: 6.0.1
