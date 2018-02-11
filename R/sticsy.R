@@ -22,7 +22,7 @@ sticsy = function(dataset, ppm,ppm_edges,method='TIC',visualization_method='medi
 	if (method=='pearson') result=as.vector(cor(rowSums(dataset[,ROI_buckets,drop=F]),dataset))
 	if (method=='spearman') result=as.vector(cor(rowSums(dataset[,ROI_buckets,drop=F]),dataset,method='spearman'))
 	if (method=='dcor') result=apply(dataset,2,function(x)dcor(rowSums(dataset[,ROI_buckets,drop=F]),x))
-	if (method=='pearson') {
+	if (method=='dcov') {
 	scaled_dataset=scale(dataset)
 	result=apply(scaled_dataset,2,function(x)dcov(rowSums(scaled_dataset[,ROI_buckets,drop=F]),x))
 	}
